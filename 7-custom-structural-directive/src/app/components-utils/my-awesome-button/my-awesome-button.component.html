@@ -1,0 +1,5 @@
+<button [disabled]="isDisabled" class="original-button" (click)="clickHandler()"
+    [ngClass]="{disabled:isDisabled}">
+    <ng-content></ng-content>
+    <ng-content select="[icon]"></ng-content>
+</button>
