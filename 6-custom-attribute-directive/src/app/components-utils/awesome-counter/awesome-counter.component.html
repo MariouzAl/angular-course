@@ -1,0 +1,20 @@
+<app-my-awesome-label [t3pgHighlight]="color" [label]="counter"></app-my-awesome-label>
+<div style="display: flex; flex-direction: row; gap: 1rem; justify-content: center;">
+  <t3pg-my-awesome-button [isDisabled]="counter<1" label="-" (clicked)="decreaseCounter()" >
+    <span>-</span> 
+  </t3pg-my-awesome-button>
+  <t3pg-my-awesome-button *ngIf="counter!==0" [isDisabled]="counter===0" (clicked)="resetCounter()" >
+    <span>reset</span>
+  </t3pg-my-awesome-button>
+  <t3pg-my-awesome-button  (clicked)="increaseCounter()" >
+    <span>+</span>
+  </t3pg-my-awesome-button>
+</div>
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
